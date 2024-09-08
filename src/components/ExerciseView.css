@@ -1,0 +1,40 @@
+/* ExerciseView.css */
+.exercise-view {
+    padding: 20px;
+  }
+  
+  .exercise-view h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .exercise-view form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .exercise-view label {
+    margin-top: 10px;
+  }
+  
+  .exercise-view input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .exercise-view button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .exercise-view button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,20 @@
+/* ExerciseLog.css */
+.exercise-log {
+    padding: 20px;
+  }
+  
+  .exercise-log h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .exercise-log ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .exercise-log li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  

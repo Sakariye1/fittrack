@@ -1,38 +1,173 @@
-.App {
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.workout-list, .exercise-list, .exercise-log {
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.workout-list li, .exercise-list li, .exercise-log li {
+  padding: 10px;
+  margin: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.add-button, .add-exercise-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button:hover, .add-exercise-button:hover {
+  background-color: #218838;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 20px;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button[type="submit"]:hover {
+ background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dashboard, .workout-view, .exercise-view, .exercise-log {
+ max-width: 800px;
+ margin: 0 auto;
+ padding: 20px;
+ background-color: #fff;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
+/* Esimerkki dashboard-tyyleistä */
+.dashboard h1 {
+ font-size: 2em;
+ margin-bottom: 20px;
+}
+
+.dashboard .workout-list li {
+ padding: 15px;
+ margin: 5px 0;
+ background-color: #f9f9f9;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+}
+
+.dashboard .add-button {
+ background-color: #007bff;
+}
+
+.dashboard .add-button:hover {
+ background-color: #0056b3;
+}
+
+/* Esimerkki treeninäkymän tyyleistä */
+.workout-view h1 {
+ font-size: 1.5em;
+ margin-bottom: 20px;
+}
+
+.workout-view .exercise-list li {
+ padding: 10px;
+ border-bottom: 1px solid #ddd;
+}
+
+.workout-view .add-exercise-button {
+ background-color: #28a745;
+}
+
+.workout-view .add-exercise-button:hover {
+ background-color: #218838;
+}
+
+/* Esimerkki harjoituksen lisäyssivun tyyleistä */
+.exercise-view h1 {
+ font-size: 1.5em;
+ margin-bottom: 20px;
+}
+
+.exercise-view form {
+ display: flex;
+ flex-direction: column;
+}
+
+.exercise-view label {
+ margin-top: 10px;
+}
+
+.exercise-view input {
+ padding: 10px;
+ margin-top: 5px;
+ border: 1px solid #ccc;
+ border-radius: 5px;
+}
+
+.exercise-view button[type="submit"] {
+ background-color: #007bff;
+}
+
+.exercise-view button[type="submit"]:hover {
+ background-color: #0056b3;
+}
+
+/* Esimerkki lokinäkymän tyyleistä */
+.exercise-log h1 {
+ font-size: 1.5em;
+ margin-bottom: 20px;
+}
+
+.exercise-log ul {
+ margin: 0;
+ padding: 0;
+}
+
+.exercise-log li {
+ padding: 10px;
+ border-bottom: 1px solid #ddd;
+}
+
