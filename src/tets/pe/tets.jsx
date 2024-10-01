@@ -1,0 +1,1 @@
+import { useGetAdminsQuery } from "../../state/api";
